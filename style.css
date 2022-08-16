@@ -1,24 +1,54 @@
-body {
-  font-family: 'Roboto Mono',monospace;
-  min-height: 400px;
-  background-image: url('');
-  background-color: red;
-  background-size: 100vh;
-  background-position: center bottom;
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.container {
+body{
+  background-color: lightgray;
+}
+    
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;   
+}
+
+.container{
   text-align: center;
-  padding: 20px;
-  height: 100vh;
+  border-radius: 10px;
+  padding: 25px;
+  width: 80%;
+  height: 100%;
+  margin: 10% auto;
+  background-color: white;
 }
 
-.page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
+#valor{
+  margin-top: 3%;
+  text-align:center;
+  width: 60%;
+  
 }
 
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 5px;
+#btn{
+  background-color: transparent;
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 10px;
+  font-size: 30px;
+}
+
+h1{
+  font-size: 50px;
+}
+
+p, h3{
+  margin-top: 2%;
+}
+
+#result{
+  margin-top: 2%;
+  display: block;
 }
