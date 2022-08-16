@@ -1,18 +1,19 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
-    <meta>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1.0" >
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <h1 class="page-title">Conversor de moedas</h1>
       <p class="page-subtitle">Descubra os valores em real R$</p>
-      <img src="" class="page-logo" alt=""><br><br>
-      <label for="moeda">Insira o valor</label><br>
-      <input type="number" id="valor" size="2"/><br>
-      <button onclick="converter()">Converter</button>
-      <h2 id="result"></h2>
+      <label>Insira o valor</label><br>
+      <input type="number" id="valor" min=0.1/><br>
+      <button id="btn" onclick="converter()">Converter</button>
+      <span id="result"></span>
    </div>
   </body>
 </html>
