@@ -22,23 +22,23 @@ function btnConvert(){
             if(moeda_saida=='11')
                 result=value;
             else if(moeda_saida=='22')
-              result=value*dolar;
+              result=value/dolar;
             else if(moeda_saida=='33')
-              result=value*euro;
+              result=value/euro;
             break;
           case '2':
             if(moeda_saida=='11')
-                result=value*dolar;
+                result=value/dolar;
             else if(moeda_saida=='22')
               result=value;
             else if(moeda_saida=='33')
-              result=value*euro;
+              result=value/euro;
             break;
           case '3':      
             if(moeda_saida=='11')
-                result=value*euro;
+                result=value/euro;
             else if(moeda_saida=='22')
-              result=value*dolar;
+              result=value/dolar;
             else if(moeda_saida=='33')
               result=value;
             break;
