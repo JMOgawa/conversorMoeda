@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, inicial-scale-1.0" >
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="page-title">Conversor de moedas</h1>
-      <p class="page-subtitle">Descubra os valores em real R$</p>
-      <label>Insira o valor</label><br>
-      <input type="number" id="valor" min=0.1/><br>
-      <button id="btn" onclick="converter()">Converter</button>
-      <span id="result"></span>
-   </div>
-  </body>
+<html>
+
+<head>
+  <title>Coinversor</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <!--<img src="...\Downloads\cambio2.png">-->
+    <img src="https://img2.gratispng.com/20180425/oaw/kisspng-exchange-rate-foreign-exchange-market-computer-ico-5ae07ba7b55625.7169770315246611597428.jpg" alt="logo" id="page-logo">
+    <h1>Conversor de Moedas</h1>
+  </header>
+
+  <div class="container">
+    <div class="box-container">
+      <div class="box">
+        <div id="box1">
+          <select class="select-moedas" id="entrada1">
+            <option value="1">Reais</option>
+            <option value="2">Dolares Americanos</option>
+            <option value="3">Euros</option>
+          </select>
+        </div>
+        <input type="number" id="valor-entrada" placeholder="0.00" min="0" step="0.01">
+      </div>
+      <div class="box">
+        <div id="box2">
+          <select class="select-moedas" id="entrada2">
+            <option value="11">Reais</option>
+            <option value="22">Dolares Americanos</option>
+            <option value="33">Euros</option>
+          </select>
+        </div>
+        <span id="valor-saida"></span>
+      </div>
+    </div>
+    <div class="btn"><button class="btn-converter" onclick="btnConvert()">Converter</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
