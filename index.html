@@ -8,7 +8,8 @@
 
 <body>
   <header class="page-header">
-    <img src="imagens/img1.png" alt="logo" id="page-logo">
+    <!--img src="imagens/img1.png" alt="logo" id="page-logo">-->
+    <img src="https://img2.gratispng.com/20180425/oaw/kisspng-exchange-rate-foreign-exchange-market-computer-ico-5ae07ba7b55625.7169770315246611597428.jpg" alt="logo" id="page-logo">
     <h1>Conversor de Moedas</h1>
   </header>
 
@@ -16,27 +17,25 @@
     <div class="box-container">
       <div class="box">
         <div id="box1">
-          <select class="select-moedas" id="entrada1">
+          <select class="select-moedas" id="entrada1" onchange="btnConvert()">
             <option value="1">Reais</option>
             <option value="2">Dolares Americanos</option>
             <option value="3">Euros</option>
           </select>
         </div>
-        <input type="number" id="valor-entrada" placeholder="0.00" min="0" step="0.01">
+        <input type="number" id="valor-entrada" placeholder="0.00" min="0" step="0.01" onkeyup="btnConvert()">
       </div>
       <div class="box">
         <div id="box2">
-          <select class="select-moedas" id="entrada2">
+          <select class="select-moedas" id="entrada2" onchange="btnConvert()">
             <option value="11">Reais</option>
             <option value="22">Dolares Americanos</option>
             <option value="33">Euros</option>
           </select>
         </div>
-        <span id="valor-saida"></span>
+        <span id="valor-saida">0.00</span>
       </div>
     </div>
-    <div class="btn"><button class="btn-converter" onclick="btnConvert()">Converter</button></div>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>
